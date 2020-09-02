@@ -8,7 +8,7 @@ const BrewsList = (props) => {
 
     return (
         <div>
-            {brews.map(brew => <BrewCard brew={brew} />)}
+            {brews.map(brew => <BrewCard key={brew.id} brew={brew} />)}
         </div>
     );
 };
