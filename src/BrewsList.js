@@ -4,11 +4,11 @@ import BrewCard from './BrewCard'
 
 const BrewsList = (props) => {
 
-    const { brew } = props
+    const { brews } = props
 
     return (
         <div>
-            <BrewCard brew={brew} />
+            {brews.map(brew => <BrewCard brew={brew} />)}
         </div>
     );
 };

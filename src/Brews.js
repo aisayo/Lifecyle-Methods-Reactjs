@@ -14,7 +14,7 @@ class Brews extends Component {
 
         return (
             <div>
-                {brews.map(brew => <BrewsList key={brew.id} brew={brew} />)}
+                <BrewsList brews={brews} />
             </div>
         );
     }
